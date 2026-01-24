@@ -1,0 +1,247 @@
+:root {
+            --primary-color: #003366;
+            --secondary-color: #00509E;
+            --accent-color: #FFD700;
+            --light-gray: #f8f9fa;
+            --dark-gray: #343a40;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark-gray);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 80, 158, 0.8)), url('https://via.placeholder.com/1920x1080.png/003366/FFFFFF?text=CorpArray+Background') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: white;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .blog-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .blog-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .bg-secondary-color {
+            background-color: var(--secondary-color);
+        }
+.cta-modern-bg {
+    background: linear-gradient(45deg, #003366, #00509E); /* Professional blue gradient */
+    color: white; /* Ensure text is white for readability */
+    padding: 80px 0; /* Adjust padding for better visual appeal */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.cta-modern-bg h2 {
+    color: white; /* Ensure heading is white */
+    font-size: 2.8rem; /* Larger heading for impact */
+    margin-bottom: 20px;
+}
+
+.cta-modern-bg p.lead {
+    font-size: 1.4rem; /* Larger lead text */
+    margin-bottom: 30px;
+}
+
+.cta-modern-bg .btn-warning {
+    background-color: var(--accent-color); /* Use accent color for button */
+    border-color: var(--accent-color);
+    color: var(--primary-color); /* Dark text on warning button */
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px; /* Pill-shaped button */
+    transition: all 0.3s ease;
+}
+
+.cta-modern-bg .btn-warning:hover {
+    background-color: #FFC107; /* Slightly darker yellow on hover */
+    border-color: #FFC107;
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-details {
+    padding-top: 40px; /* Add padding to the top */
+    padding: 30px; /* Add padding all around for a card-like effect */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background for contrast */
+}
+
+.contact-details h2 {
+    color: #003366; /* Dark blue for headings */
+    margin-bottom: 25px;
+}
+
+.contact-details .icon {
+    font-size: 2.2rem;
+    color: #00509E; /* A slightly lighter blue for icons */
+}
+
+.contact-details h4 {
+    color: #333333; /* Darker text for subheadings */
+}
+
+.contact-details p {
+    color: #555555; /* Slightly lighter text for paragraphs */
+}
+
+.contact-details a {
+    color: #00509E; /* Link color */
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Testimonial Carousel Styles */
+#testimonials .carousel-item {
+    padding: 20px;
+}
+
+#testimonials .testimonial-card {
+    background: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 200px; /* Ensure consistent height for cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonials .carousel-indicators button {
+    background-color: var(--primary-color);
+}
+
+#testimonials .carousel-control-prev-icon,
+#testimonials .carousel-control-next-icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Hide HubSpot branding */
+.hs-form-branding {
+    display: none !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--dark-gray);
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+}

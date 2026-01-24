@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorpArray - Corporate Governance & Legal Compliance Services</title>
+    <meta name="description" content="CorpArray offers expert corporate governance, FEMA consultancy, securities law compliance, and legal services to help your business thrive.">
+    <meta name="keywords" content="FEMA, Securities Law, Corporate Governance, Company Registration, Corporate Litigation, IPR">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #00509E;
+            --accent-color: #FFD700;
+            --light-gray: #f8f9fa;
+            --dark-gray: #343a40;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark-gray);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero {
+            position: relative;
+            color: white;
+            height: 650px;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
+            background-size: cover;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: white;
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+            opacity: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            animation: fadeInUp 1s ease-out 1s forwards;
+            opacity: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero .btn {
+            animation: fadeInUp 1s ease-out 1.5s forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .blog-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .blog-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .bg-secondary-color {
+            background-color: var(--secondary-color);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/corparraylogo.jpg" type="image/x-icon">
+    <style>
+        .hbspt-form__footer,
+        .hbspt-form__footer a {
+            color: white !important;
+            text-decoration: none !important;
+            overflow: hidden !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/corparraylogo.jpg" alt="CorpArray Logo" style="height: 40px; margin-right: 10px;">
+                <span>CorpArray</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="images/home.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h1>Your Trusted Partner in Corporate Governance</h1>
+            <p class="lead">Expert legal and compliance solutions to navigate the complexities of modern business.</p>
+            <a href="#contact" class="btn btn-warning btn-lg mt-3">Get a Free Consultation</a>
+        </div>
+    </header>
+
+    
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <a href="services/fema-consultancy.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-landmark"></i></div>
+                            <h4>FEMA Consultancy</h4>
+                            <p>Complete foreign exchange law compliance and advisory services.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="services/securities-laws.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-chart-line"></i></div>
+                            <h4>Securities Laws</h4>
+                            <p>IPO compliance, takeovers, and securities regulations advisory.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="services/secretarial-services.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-cogs"></i></div>
+                            <h4>Secretarial Services</h4>
+                            <p>Advisory and compliance for global clients on secretarial matters.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="services/corporate-audit.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-clipboard-check"></i></div>
+                            <h4>Corporate Audit</h4>
+                            <p>Secretarial, FEMA, and Stock Broking audits for compliance assurance.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="services/company-registration.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-building"></i></div>
+                            <h4>Company/LLP Registration</h4>
+                            <p>Fast-track business registration and formation services.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="services/corporate-litigation.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-balance-scale"></i></div>
+                            <h4>Corporate Litigation</h4>
+                            <p>Legal representation at NCLT, ROC, and RD proceedings.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <p>"CorpArray's expertise in FEMA compliance was invaluable to our international expansion. Highly recommended."</p>
+                            <h5 class="mt-3">- John Doe, CEO of TechCorp</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"The team handled our IPO process flawlessly. Their attention to detail is second to none."</p>
+                            <h5 class="mt-3">- Jane Smith, CFO of Innovate Inc.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"Fast, efficient, and professional company registration services. They made the process seamless."</p>
+                            <h5 class="mt-3">- Sam Wilson, Founder of StartupX</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"CorpArray provided exceptional guidance through complex corporate restructuring. Their insights were crucial."</p>
+                            <h5 class="mt-3">- Emily White, Director at Global Ventures</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"Their secretarial services are top-notch, ensuring we are always compliant and well-informed."</p>
+                            <h5 class="mt-3">- David Green, Operations Manager at Apex Solutions</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"We relied on CorpArray for our intellectual property rights, and they delivered with precision and speed."</p>
+                            <h5 class="mt-3">- Sarah Brown, Lead Innovator at FutureTech</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"The corporate audit conducted by CorpArray was thorough and highly professional. It gave us great peace of mind."</p>
+                            <h5 class="mt-3">- Michael Lee, Compliance Officer at SecureCorp</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"Their team's understanding of NCLT procedures is impressive. They navigated our litigation with expertise."</p>
+                            <h5 class="mt-3">- Jessica Taylor, Legal Counsel at Prime Holdings</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"CorpArray made our company formation process incredibly smooth and efficient. Excellent service!"</p>
+                            <h5 class="mt-3">- Chris Evans, Founder of NextGen Startups</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p>"For all our securities law needs, CorpArray is our go-to partner. Their advice is always clear and actionable."</p>
+                            <h5 class="mt-3">- Olivia Wilson, Investment Manager at Capital Growth</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Insights & Articles</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200.png/003366/FFFFFF?text=FEMA" alt="FEMA Compliance">
+                        <div class="p-3">
+                            <h5>FEMA Compliance Updates</h5>
+                            <p>Stay informed on the latest changes in foreign exchange laws...</p>
+                            <a href="blog/fema-compliance-updates.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200.png/00509E/FFFFFF?text=IPO" alt="IPO Regulations">
+                        <div class="p-3">
+                            <h5>IPO Regulatory Changes</h5>
+                            <p>Navigating the evolving landscape of Initial Public Offerings...</p>
+                            <a href="blog/ipo-regulatory-changes.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200.png/343a40/FFFFFF?text=Governance" alt="Corporate Governance">
+                        <div class="p-3">
+                            <h5>Corporate Governance Best Practices</h5>
+                            <p>Key strategies to enhance your company's governance framework...</p>
+                            <a href="blog/corporate-governance-best-practices.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="contact-form">
+<script src="https://js-ap1.hsforms.net/forms/embed/441937561.js" defer></script>
+<div class="hs-form-frame" data-region="ap1" data-form-id="1e201570-745e-4e59-935e-f30c5cfd74ea" data-portal-id="441937561"></div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section cta-modern-bg text-white text-center">
+        <div class="container">
+            <h2>Ready to Secure Your Business's Future?</h2>
+            <p class="lead">Let our experts handle your corporate governance and compliance needs so you can focus on growth.</p>
+            <a href="#contact" class="btn btn-warning btn-lg mt-3">Schedule a Free Consultation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 CorpArray. All Rights Reserved.</p>
+            <div>
+                <a href="https://www.linkedin.com/company/corparray" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/corparray" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        
+    </script>
+
+</body>
+</html>

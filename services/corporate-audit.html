@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorpArray - Corporate Governance & Legal Compliance Services</title>
+    <meta name="description" content="CorpArray offers expert corporate governance, FEMA consultancy, securities law compliance, and legal services to help your business thrive.">
+    <meta name="keywords" content="FEMA, Securities Law, Corporate Governance, Company Registration, Corporate Litigation, IPR">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #00509E;
+            --accent-color: #FFD700;
+            --light-gray: #f8f9fa;
+            --dark-gray: #343a40;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark-gray);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 80, 158, 0.8)), url('https://via.placeholder.com/1920x1080.png/003366/FFFFFF?text=CorpArray+Background') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: white;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .blog-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .blog-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .bg-secondary-color {
+            background-color: var(--secondary-color);
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/corparraylogo.jpg" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/corparraylogo.jpg" alt="CorpArray Logo" style="height: 40px; margin-right: 10px;">
+                <span>CorpArray</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Corporate Audit</h1>
+            <p class="lead">Ensuring compliance and financial integrity.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Secretarial, FEMA, and Stock Broking Audits</h2>
+                    <p>Corporate audits are a vital tool for ensuring compliance, identifying risks, and promoting good corporate governance. At CorpArray, we offer a range of specialized audit and assurance services designed to provide stakeholders with the confidence that the company is operating in a compliant and ethical manner.</p>
+                    
+                    <h3>A Comprehensive and Risk-Based Approach</h3>
+                    <p>Our audit methodology is based on a deep understanding of the business and the regulatory environment in which it operates. We adopt a risk-based approach, focusing on the areas that are most critical to the company's success and compliance. Our goal is not just to identify problems but to provide practical and actionable recommendations for improvement.</p>
+
+                    <img src="https://via.placeholder.com/700x400.png/00509E/FFFFFF?text=Compliance+Assurance" class="img-fluid rounded my-4">
+
+                    <h3>Key Areas of Our Corporate Audit Services</h3>
+                    <h4>1. Secretarial Audit</h4>
+                    <p>A secretarial audit is a comprehensive review of a company's compliance with all applicable corporate and other laws. It is a mandatory requirement for all listed companies and certain other public companies. Our team of qualified company secretaries conducts a thorough and independent audit, providing the board with the assurance that the company is in full compliance with its legal and regulatory obligations.</p>
+                    
+                    <h4>2. FEMA Audit</h4>
+                    <p>A FEMA audit is a specialized review of a company's compliance with foreign exchange laws. It is a critical tool for identifying and mitigating the risks associated with cross-border transactions. Our team of FEMA experts conducts a detailed audit of all foreign exchange transactions, providing a comprehensive report on the company's compliance with FEMA and its various rules and regulations.</p>
+
+                    <h4>3. Stock Broking Audit</h4>
+                    <p>Stockbrokers are subject to a stringent regulatory framework designed to protect the interests of investors. We conduct a comprehensive audit of the operations and compliance of stockbrokers, ensuring that they are in full compliance with all SEBI and stock exchange regulations. Our audit covers all aspects of the stockbroking business, from client registration to trade execution and settlement.</p>
+
+                    <h3>Why Choose CorpArray for Corporate Audit Services?</h3>
+                    <p><strong>Independent and Objective:</strong> We provide an independent and objective assessment of your company's compliance and governance framework.</p>
+                    <p><strong>Expert Team:</strong> Our team comprises qualified professionals with extensive experience in their respective fields.</p>
+                    <p><strong>Value-Added Services:</strong> We go beyond mere compliance, providing valuable insights and recommendations to improve your business processes and controls.</p>
+                    <p><strong>Risk-Based Approach:</strong> Our audit methodology is designed to focus on the areas of greatest risk, ensuring that our efforts are targeted and effective.</p>
+                    <p>At CorpArray, we are committed to providing high-quality audit and assurance services that add value to your business. We are your trusted partner in promoting transparency, accountability, and good corporate governance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Related Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <a href="fema-consultancy.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-landmark"></i></div>
+                            <h4>FEMA Consultancy</h4>
+                            <p>Complete foreign exchange law compliance and advisory services.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="securities-laws.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-chart-line"></i></div>
+                            <h4>Securities Laws</h4>
+                            <p>IPO compliance, takeovers, and securities regulations advisory.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="company-registration.html" class="text-decoration-none">
+                        <div class="service-card">
+                            <div class="icon"><i class="fas fa-building"></i></div>
+                            <h4>Company/LLP Registration</h4>
+                            <p>Fast-track business registration and formation services.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section cta-modern-bg text-white text-center">
+        <div class="container">
+            <h2>Ready to Secure Your Business's Future?</h2>
+            <p class="lead">Let our experts handle your corporate governance and compliance needs so you can focus on growth.</p>
+            <a href="../index.html#contact" class="btn btn-warning btn-lg mt-3">Schedule a Free Consultation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 CorpArray. All Rights Reserved.</p>
+            <div>
+                <a href="https://www.linkedin.com/company/corparray" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/corparray" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorpArray - Corporate Governance & Legal Compliance Services</title>
+    <meta name="description" content="CorpArray offers expert corporate governance, FEMA consultancy, securities law compliance, and legal services to help your business thrive.">
+    <meta name="keywords" content="FEMA, Securities Law, Corporate Governance, Company Registration, Corporate Litigation, IPR">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #00509E;
+            --accent-color: #FFD700;
+            --light-gray: #f8f9fa;
+            --dark-gray: #343a40;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark-gray);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 80, 158, 0.8)), url('https://via.placeholder.com/1920x1080.png/003366/FFFFFF?text=CorpArray+Background') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: white;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .blog-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .blog-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .bg-secondary-color {
+            background-color: var(--secondary-color);
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/corparraylogo.jpg" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/corparraylogo.jpg" alt="CorpArray Logo" style="height: 40px; margin-right: 10px;">
+                <span>CorpArray</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="background-image: url('../images/nclt-litigation.png');">
+        <div class="container">
+            <h1>NCLT Procedures and Updates</h1>
+            <p class="lead">Posted on August 9, 2025 by CorpArray</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>The National Company Law Tribunal (NCLT) is a quasi-judicial body in India that adjudicates issues relating to Indian companies. The NCLT was established under the Companies Act, 2013 and has wide powers to deal with a variety of corporate matters, including insolvency and bankruptcy, mergers and acquisitions, and oppression and mismanagement.</p>
+                    <p>In this article, we will provide an overview of the procedures and recent updates related to the NCLT.</p>
+
+                    <h2>NCLT Procedures</h2>
+                    <p>The procedures for filing an application with the NCLT are governed by the National Company Law Tribunal Rules, 2016. The first step is to file a petition or an application with the appropriate bench of the NCLT. The petition or application should be accompanied by all the relevant documents and a fee.</p>
+                    <p>Once the petition or application is filed, the NCLT will issue a notice to the other party, who will be given an opportunity to file a reply. The NCLT will then hear both the parties and pass an order.</p>
+
+                    <h2>Recent Updates</h2>
+                    <h4>1. Introduction of the Insolvency and Bankruptcy Code (IBC)</h4>
+                    <p>The IBC was enacted in 2016 to provide a time-bound and market-driven process for the resolution of insolvency and bankruptcy. The NCLT is the adjudicating authority for all matters under the IBC. The IBC has been a game-changer in the Indian corporate landscape, and it has helped to improve the credit culture and to reduce the time taken for the resolution of insolvency.</p>
+
+                    <h4>2. E-filing of documents</h4>
+                    <p>The NCLT has introduced a system of e-filing of documents, which has made it easier and more convenient for parties to file their petitions and applications. The e-filing system has also helped to reduce the use of paper and to make the NCLT a more environmentally friendly organization.</p>
+
+                    <h4>3. Video conferencing</h4>
+                    <p>The NCLT has started to conduct hearings through video conferencing, which has been a great help during the COVID-19 pandemic. Video conferencing has helped to ensure that the NCLT continues to function even during the lockdown, and it has also made it easier for parties to attend hearings from the comfort of their homes or offices.</p>
+
+                    <h2>Conclusion</h2>
+                    <p>The NCLT is a vital institution in the Indian corporate landscape. It plays a key role in ensuring that corporate disputes are resolved in a timely and efficient manner. The recent updates to the NCLT procedures have made it more accessible and user-friendly. At CorpArray, we have a team of experienced lawyers who can help you with all your NCLT-related matters. Contact us today to learn more about our corporate litigation services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Related Articles</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200.png/003366/FFFFFF?text=Securities" alt="Securities Law">
+                        <div class="p-3">
+                            <h5>Securities Law Amendments</h5>
+                            <p>A review of the recent amendments to securities laws in India...</p>
+                            <a href="securities-law-amendments.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200.png/00509E/FFFFFF?text=Restructuring" alt="Corporate Restructuring">
+                        <div class="p-3">
+                            <h5>Corporate Restructuring Trends</h5>
+                            <p>An analysis of the latest trends in corporate restructuring...</p>
+                            <a href="corporate-restructuring-trends.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="../images/related-due-diligence.png" alt="Due Diligence">
+                        <div class="p-3">
+                            <h5>The Importance of Due Diligence in Mergers and Acquisitions</h5>
+                            <p>An in-depth look at the critical role of due diligence in M&A...</p>
+                            <a href="due-diligence-in-mergers-and-acquisitions.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section cta-modern-bg text-white text-center">
+        <div class="container">
+            <h2>Ready to Secure Your Business's Future?</h2>
+            <p class="lead">Let our experts handle your corporate governance and compliance needs so you can focus on growth.</p>
+            <a href="../index.html#contact" class="btn btn-warning btn-lg mt-3">Schedule a Free Consultation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 CorpArray. All Rights Reserved.</p>
+            <div>
+                <a href="https://www.linkedin.com/company/corparray" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/corparray" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

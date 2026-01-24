@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorpArray - Corporate Governance & Legal Compliance Services</title>
+    <meta name="description" content="CorpArray offers expert corporate governance, FEMA consultancy, securities law compliance, and legal services to help your business thrive.">
+    <meta name="keywords" content="FEMA, Securities Law, Corporate Governance, Company Registration, Corporate Litigation, IPR">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #00509E;
+            --accent-color: #FFD700;
+            --light-gray: #f8f9fa;
+            --dark-gray: #343a40;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark-gray);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 80, 158, 0.8)), url('https://via.placeholder.com/1920x1080.png/003366/FFFFFF?text=CorpArray+Background') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: white;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .blog-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        
+        .blog-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .bg-secondary-color {
+            background-color: var(--secondary-color);
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/corparraylogo.jpg" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/corparraylogo.jpg" alt="CorpArray Logo" style="height: 40px; margin-right: 10px;">
+                <span>CorpArray</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="background-image: url('../images/ma-strategy.png');">
+        <div class="container">
+            <h1>Due Diligence in Mergers and Acquisitions</h1>
+            <p class="lead">An in-depth look at the critical role of due diligence in M&A...</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Mergers and acquisitions (M&A) are complex transactions that can have a significant impact on a company's future. A successful M&A transaction can create significant value for shareholders, while a failed transaction can be a costly mistake. One of the most critical factors in determining the success of an M&A transaction is the quality of the due diligence.</p>
+                    <p>In this article, we will discuss the importance of due diligence in M&A and how it can help you to avoid costly mistakes.</p>
+
+                    <h2>What is Due Diligence?</h2>
+                    <p>Due diligence is the process of investigating a business to assess its assets, liabilities, and overall financial health. It is a critical step in any M&A transaction, as it helps the acquirer to identify any potential risks and to make an informed decision about whether to proceed with the transaction.</p>
+
+                    <h2>The Importance of Due Diligence</h2>
+                    <h4>1. Identify Potential Risks</h4>
+                    <p>Due diligence helps the acquirer to identify any potential risks associated with the target company. These risks could include financial risks, legal risks, operational risks, and reputational risks. By identifying these risks early on, the acquirer can take steps to mitigate them or to walk away from the transaction if the risks are too high.</p>
+
+                    <h4>2. Validate the Purchase Price</h4>
+                    <p>Due diligence helps the acquirer to validate the purchase price of the target company. By conducting a thorough investigation of the target company's financials, the acquirer can determine whether the purchase price is fair and reasonable. This can help to prevent the acquirer from overpaying for the target company.</p>
+
+                    <h4>3. Plan for Integration</h4>
+                    <p>Due diligence helps the acquirer to plan for the integration of the target company. By understanding the target company's operations, culture, and systems, the acquirer can develop a more effective integration plan. This can help to ensure a smooth and successful integration process.</p>
+
+                    <h2>Conclusion</h2>
+                    <p>Due diligence is a critical step in any M&A transaction. It is a complex and time-consuming process, but it is a worthwhile investment that can help you to avoid costly mistakes. At CorpArray, we have a team of experienced professionals who can help you with all aspects of the due diligence process. Contact us today to learn more about our M&A advisory services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Related Articles</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200.png/003366/FFFFFF?text=FDI" alt="FDI in India">
+                        <div class="p-3">
+                            <h5>A Guide to Foreign Direct Investment (FDI) in India</h5>
+                            <p>A comprehensive guide to the FDI policy in India...</p>
+                            <a href="fdi-in-india-guide.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200.png/00509E/FFFFFF?text=IPO" alt="IPO Regulations">
+                        <div class="p-3">
+                            <h5>IPO Regulatory Changes</h5>
+                            <p>Navigating the evolving landscape of Initial Public Offerings...</p>
+                            <a href="ipo-regulatory-changes.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <img src="../images/related-governance.png" alt="Corporate Governance">
+                        <div class="p-3">
+                            <h5>Corporate Governance Best Practices</h5>
+                            <p>Key strategies to enhance your company's governance framework...</p>
+                            <a href="corporate-governance-best-practices.html" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section cta-modern-bg text-white text-center">
+        <div class="container">
+            <h2>Ready to Secure Your Business's Future?</h2>
+            <p class="lead">Let our experts handle your corporate governance and compliance needs so you can focus on growth.</p>
+            <a href="../index.html#contact" class="btn btn-warning btn-lg mt-3">Schedule a Free Consultation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 CorpArray. All Rights Reserved.</p>
+            <div>
+                <a href="https://www.linkedin.com/company/corparray" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/corparray" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Windows Zone Identifiers
+*:Zone.Identifier
+
+# Archives
+*.zip
+*.rar
+*.tar
+*.gz
+
+# OS specific
+.DS_Store
+Thumbs.db
