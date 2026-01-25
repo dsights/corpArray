@@ -208,7 +208,47 @@
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    
+                    <!-- Mega Menu for Services -->
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h5>Registration & Startup</h5>
+                                        <ul>
+                                            <li><a href="services/company-registration.html">Company/LLP Registration</a></li>
+                                            <li><a href="services/foreign-company-registration.html">Foreign Company Registration</a></li>
+                                            <li><a href="services/startup-package.html">Startup Package</a></li>
+                                            <li><a href="services/intellectual-property-rights.html">Intellectual Property Rights</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Compliance & Secretarial</h5>
+                                        <ul>
+                                            <li><a href="services/annual-asic-compliance.html">Annual ASIC Compliance</a></li>
+                                            <li><a href="services/aml-ctf-compliance.html">AML/CTF Compliance</a></li>
+                                            <li><a href="services/secretarial-services.html">Secretarial Services</a></li>
+                                            <li><a href="services/corporate-audit.html">Corporate Audit</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Advisory & Legal</h5>
+                                        <ul>
+                                            <li><a href="services/fema-consultancy.html">FEMA Consultancy</a></li>
+                                            <li><a href="services/securities-laws.html">Securities Laws</a></li>
+                                            <li><a href="services/corporate-litigation.html">Corporate Litigation</a></li>
+                                            <li><a href="services/corporate-restructuring.html">Corporate Restructuring</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item ms-lg-3"><a class="btn btn-sm btn-outline-primary fw-bold" href="tel:+61434945317"><i class="fas fa-phone-alt me-1"></i> +61 434 945 317</a></li>
@@ -388,38 +428,93 @@
     <section id="blog" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Insights & Articles</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-card">
-                        <img src="images/aml-ctf-compliance.png" alt="AML/CTF Compliance" onerror="this.src='https://via.placeholder.com/400x200.png/003366/FFFFFF?text=AML+Compliance'">
-                        <div class="p-3">
-                            <h5>AML/CTF Tranche 2 Guide</h5>
-                            <p>Essential guide for lawyers, accountants, and real estate agents on the new 2026 reforms.</p>
-                            <a href="blog/aml-ctf-tranche-2-guide.html" class="btn btn-outline-primary">Read More</a>
+            
+            <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <!-- Slide 1: New Articles -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="blog-card">
+                                    <img src="images/aml-ctf-compliance.png" alt="AML/CTF Compliance" onerror="this.src='https://via.placeholder.com/400x200.png/003366/FFFFFF?text=AML+Compliance'">
+                                    <div class="p-3">
+                                        <h5>AML/CTF Tranche 2 Guide</h5>
+                                        <p>Essential guide for lawyers, accountants, and real estate agents on the new 2026 reforms.</p>
+                                        <a href="blog/aml-ctf-tranche-2-guide.html" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="blog-card">
+                                    <img src="images/foreign-investment.png" alt="Foreign Company Registration" onerror="this.src='https://via.placeholder.com/400x200.png/00509E/FFFFFF?text=Foreign+Registration'">
+                                    <div class="p-3">
+                                        <h5>Foreign Company Registration</h5>
+                                        <p>Step-by-step guide to registering your international business in Australia.</p>
+                                        <a href="blog/foreign-company-registration-guide.html" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="blog-card">
+                                    <img src="images/compliance-assurance.png" alt="ASIC Annual Review" onerror="this.src='https://via.placeholder.com/400x200.png/343a40/FFFFFF?text=ASIC+Compliance'">
+                                    <div class="p-3">
+                                        <h5>ASIC Annual Review Mistakes</h5>
+                                        <p>Avoid these 7 common costly mistakes during your company's annual review.</p>
+                                        <a href="blog/asic-annual-review-mistakes.html" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Original Articles -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="blog-card">
+                                    <img src="https://via.placeholder.com/400x200.png/003366/FFFFFF?text=FEMA" alt="FEMA Compliance">
+                                    <div class="p-3">
+                                        <h5>FEMA Compliance Updates</h5>
+                                        <p>Stay informed on the latest changes in foreign exchange laws and regulations.</p>
+                                        <a href="blog/fema-compliance-updates.html" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="blog-card">
+                                    <img src="https://via.placeholder.com/400x200.png/00509E/FFFFFF?text=IPO" alt="IPO Regulations">
+                                    <div class="p-3">
+                                        <h5>IPO Regulatory Changes</h5>
+                                        <p>Navigating the evolving landscape of Initial Public Offerings in the market.</p>
+                                        <a href="blog/ipo-regulatory-changes.html" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="blog-card">
+                                    <img src="https://via.placeholder.com/400x200.png/343a40/FFFFFF?text=Governance" alt="Corporate Governance">
+                                    <div class="p-3">
+                                        <h5>Governance Best Practices</h5>
+                                        <p>Key strategies to enhance your company's governance framework for success.</p>
+                                        <a href="blog/corporate-governance-best-practices.html" class="btn btn-outline-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-card">
-                        <img src="images/foreign-investment.png" alt="Foreign Company Registration" onerror="this.src='https://via.placeholder.com/400x200.png/00509E/FFFFFF?text=Foreign+Registration'">
-                        <div class="p-3">
-                            <h5>Foreign Company Registration</h5>
-                            <p>Step-by-step guide to registering your international business in Australia.</p>
-                            <a href="blog/foreign-company-registration-guide.html" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-card">
-                        <img src="images/compliance-assurance.png" alt="ASIC Annual Review" onerror="this.src='https://via.placeholder.com/400x200.png/343a40/FFFFFF?text=ASIC+Compliance'">
-                        <div class="p-3">
-                            <h5>ASIC Annual Review Mistakes</h5>
-                            <p>Avoid these 7 common costly mistakes during your company's annual review.</p>
-                            <a href="blog/asic-annual-review-mistakes.html" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            
         </div>
     </section>
 
