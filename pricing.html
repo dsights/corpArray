@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Packages | CorpArray</title>
+    <meta name="description" content="Transparent pricing for company registration, annual compliance, and legal services. Choose the package that suits your business needs.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/corparraylogo.jpg" type="image/x-icon">
+    <style>
+        .pricing-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .pricing-header {
+            margin-bottom: 30px;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .features li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .features li i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/corparraylogo.jpg" alt="CorpArray Logo" style="height: 40px; margin-right: 10px;">
+                <span>CorpArray</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 400px; background: var(--primary-color);">
+        <div class="container">
+            <h1>Pricing & Packages</h1>
+            <p class="lead">Simple, transparent pricing for your business compliance needs.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Startup Package -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Startup Launch</h3>
+                            <div class="price">$599</div>
+                            <p class="text-muted">Perfect for new businesses</p>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> ASIC Company Registration</li>
+                                <li><i class="fas fa-check"></i> ABN & TFN Application</li>
+                                <li><i class="fas fa-check"></i> Director ID Assistance</li>
+                                <li><i class="fas fa-check"></i> Standard Constitution</li>
+                                <li><i class="fas fa-check"></i> 1st Year Registered Agent</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?package=startup" class="btn btn-outline-primary w-100">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Compliance Package -->
+                <div class="col-md-4">
+                    <div class="pricing-card" style="border-color: var(--secondary-color); border-width: 2px;">
+                        <div class="pricing-header">
+                            <h3>Annual Compliance</h3>
+                            <div class="price">$350</div>
+                            <p class="text-muted">Per Year</p>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Registered Agent Services</li>
+                                <li><i class="fas fa-check"></i> ASIC Annual Review</li>
+                                <li><i class="fas fa-check"></i> Solvency Resolution</li>
+                                <li><i class="fas fa-check"></i> Address Changes</li>
+                                <li><i class="fas fa-check"></i> Compliance Reminders</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?package=compliance" class="btn btn-primary w-100">Subscribe</a>
+                    </div>
+                </div>
+
+                <!-- Custom/Enterprise -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Corporate Advisory</h3>
+                            <div class="price">Custom</div>
+                            <p class="text-muted">For complex needs</p>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> AML/CTF Compliance Program</li>
+                                <li><i class="fas fa-check"></i> Foreign Company Registration</li>
+                                <li><i class="fas fa-check"></i> Corporate Restructuring</li>
+                                <li><i class="fas fa-check"></i> Legal Representation (NCLT)</li>
+                                <li><i class="fas fa-check"></i> Priority Support</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?package=advisory" class="btn btn-outline-primary w-100">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <p class="text-muted">* All prices include GST. Government fees are extra where applicable.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 CorpArray. All Rights Reserved.</p>
+            <p class="small text-white-50">ABN: 12 345 678 901 | Liability limited by a scheme approved under Professional Standards Legislation.</p>
+            <div>
+                <a href="https://www.linkedin.com/company/corparray" class="text-white me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/corparray" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
